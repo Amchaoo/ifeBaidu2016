@@ -1,0 +1,185 @@
+/*通用样式*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 黑体;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+li{
+    list-style: none;
+}
+.clear-fix{
+    clear: both;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+body{
+    background-color: rgba(169, 169, 169, 0.87);
+}
+/*bar区样式*/
+#bar{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.89);
+    width: 100%;
+    line-height: 60px;
+}
+#bar img{
+    display: block;
+    margin: 5px 0 5px 30px;
+}
+#bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+#bar a:hover{
+    color: red;
+}
+#bar li{
+    float: left;
+    width: 70px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+/*内容区通用样式*/
+.article, #image, #login{
+    background-color: white;
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.72);
+    border: 1px solid #999;
+}
+.article h2{
+    line-height: 50px;
+}
+.article h3{
+    line-height: 30px;
+}
+.author span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.article .first{
+    text-indent: 30px;
+}
+.article p{
+    line-height:26px;
+    font-size: 15px;
+}
+#content .author{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 20px;
+}
+.article img{
+    margin: 20px 0;
+}
+    /*article2*/
+#article2 ul{
+    margin-left: 20px;
+}
+#article2 ul li{
+    height: 25px;
+    line-height: 25px;
+}
+    /*image*/
+#image ul{
+    margin-left: 20px;
+}
+#image li{
+    width:  200px;
+    height: 200px;
+    border: 1px solid #999;
+    margin: 10px;
+    text-align: center;
+}
+#image li p{
+    line-height: 40px;
+}
+#image li img{
+    margin-top: 20px;
+}
+    /*article3*/
+#article3 li{
+    list-style-type: decimal;
+}
+#article3 ul{
+    margin-left: 40px;
+    padding: 10px;
+}
+#article3 table{
+    width: 100%;
+    border-collapse:collapse;
+}
+#article3 tr{
+    height: 30px;
+}
+#article3 table,th, td {
+    border: 1px solid #999999;
+}
+#article3 th{
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    background-color: #333;
+}
+#article3 .foot{
+    background-color: #999999;
+}
+
+/*login*/
+#login h2{
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid #BBBBBB;
+}
+#login label,#login p{
+    font-size: 13px;
+}
+#login form div{
+    margin-left: 250px;
+}
+#login form .project{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    margin-right: 10px;
+    line-height: 40px;
+}
+#login form input{
+    height: 20px;
+    vertical-align: middle;
+}
+#login form .tip{
+    padding-left: 120px;
+    color: #999999;
+}
+#login form textarea{
+    width: 700px;
+    height: 100px;
+    vertical-align: text-top;
+}
+#login form .submit{
+    width: 100%;
+    background-color: #342eff;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;border: 0;
+    border-radius: 5px;
+}

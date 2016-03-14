@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 <div id="bar">
-    <h1>文章一级标题</h1>
-    <ul>
+    <img class="fl" align="logo" src="image/baidu.gif"/>
+    <ul class="fr">
         <li><a href="#">导航链接一</a></li>
         <li><a href="#">导航链接二</a></li>
         <li><a href="#">导航链接三</a></li>
@@ -15,12 +16,12 @@
     </ul>
 </div>
 <div id="content">
-    <div id="article1">
+    <div id="article1" class="article">
         <h2>文章一级标题</h2>
         <h3>文章二级标题</h3>
-        <p><span>文章作者</span><span>文章发表时间</span></p>
+        <p class="author"><span>文章作者</span><span>文章发表时间</span></p>
 
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+        <p class="first">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
             换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
             ,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
             <a href="http://http://ife.baidu.com/">百度前端技术学院</a>，这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
@@ -36,12 +37,12 @@
             ,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
         </p>
     </div>
-    <div id="article2">
+    <div id="article2" class="article">
         <h2>另一篇文章一级标题</h2>
         <h3>文章二级标题</h3>
-        <p><span>文章作者</span><span>文章发表时间</span></p>
+        <p class="author"><span>文章作者</span><span>文章发表时间</span></p>
 
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
+        <p class="fisrt">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落
             换行了<br/>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
             ,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
             <a href="http://http://ife.baidu.com/">百度前端技术学院</a>，这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
@@ -57,54 +58,64 @@
         </ul>
     </div>
     <div id="image">
-        <h3>图片</h3>
-        <p>好看的图片</p>
+        <h2>图片</h2>
         <ul>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
-            <li><img src="fresh8.jpg"/>
+            <li>
                 <p>好看的图片</p>
+                <img src="fresh8.jpg"/>
             </li>
+
         </ul>
     </div>
-    <div id="article3">
+    <div id="article3" class="article">
         <h2>最后一篇文章一级标题</h2>
         <h3>文章二级标题</h3>
-        <p><span>文章作者</span><span>文章发表时间</span></p>
+        <p class="author"><span>文章作者</span><span>文章发表时间</span></p>
 
-        <ol>
+        <ul>
             <li>排名1</li>
             <li>排名2</li>
             <li>排名3</li>
-        </ol>
+        </ul>
 
         <p>下面是一个表格</p>
-        <table border="1">
+        <table border="1px">
             <tr>
                 <th>表头</th>
                 <th>表头</th>
@@ -130,7 +141,7 @@
                 <td>表格单元内容</td>
                 <td><a href="#">操作</a></td>
             </tr>
-            <tr>
+            <tr class="foot">
                 <td>总计</td>
                 <td colspan="2">1000</td>
             </tr>
@@ -138,35 +149,36 @@
     </div>
 </div>
 <div id="login">
-    <h2>这是一个侧栏，这是侧栏的标签</h2>
-    <h2>侧栏注册窗口标题</h2>
-    <form>
-        <p><label for="1">请输入邮箱地址：</label><input id="1" type="email" placeholder="这是一个文本输入框"/></p>
-        <p>邮箱地址请按要求格式输入</p>
-        <p><label for="2">请输入密码：</label><input id="2" type="password" placeholder="这是一个文本输入框"/>
-            <label for="3">请重复输入密码：</label><input id="3" type="password" placeholder="这是一个文本输入框"/>
-        </p>
-        <p>密码请为6-16位英文数字</p>
+    <h2>这里以后一个侧栏，这是侧栏的标题</h2>
+    <form action="post">
+        <div>
+            <p><label class="project" for="1">请输入邮箱地址</label><input id="1" type="email" placeholder="这是一个文本输入框"/>
+            <p class="tip">邮箱地址请按要求格式输入</p></p>
+            <p><label class="project" for="2">请输入密码</label><input id="2" type="password" placeholder="这是一个文本输入框"/><br/>
+                <label class="project" for="3">请重复输入密码</label><input id="3" type="password" placeholder="这是一个文本输入框"/>
+            <p class="tip">密码请为6-16位英文数字</p>
+            </p>
 
-        <span>性别：</span>
-        <input type="radio" value="男"><span>男</span>
-        <input type="radio" value="女"><span>女</span>
+            <label class="project">性别</label>
+            <input id="male" type="radio" value="男"><label for="male">男</label>
+            <input id="female" type="radio" value="女"><label for="female">女</label><br/>
 
-        <span>城市：</span>
-        <select>
-            <option value="北京">北京</option>
-            <option value="上海">上海</option>
-            <option value="广州">广州</option>
-        </select>
+            <label class="project">城市</label>
+            <select title="city">
+                <option value="北京">北京</option>
+                <option value="上海">上海</option>
+                <option value="广州">广州</option>
+            </select><br/>
 
-        <span>爱好：</span>
-        <input type="checkbox"><span>运动</span>
-        <input type="checkbox"><span>艺术</span>
-        <input type="checkbox"><span>科学</span>
+            <label class="project">爱好</label>
+            <input title="运动" type="checkbox"><span>运动</span>
+            <input title="艺术" type="checkbox"><span>艺术</span>
+            <input title="科学" type="checkbox"><span>科学</span><br/>
 
-        <span>个人描述：</span>
-        <textarea>这是一个多行输入框，输入您的个人描述</textarea>
-        <input type="submit" value="确认提交">
+            <label class="project">个人描述</label>
+            <textarea title="content">这是一个多行输入框，输入您的个人描述</textarea><br/>
+        </div>
+        <input title="提交" value="确认提交" class="submit"/>
     </form>
 </div>
 <footer>版权所有©</footer>
