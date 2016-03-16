@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#freshmanTeam{
+    width: 97%;
+    border: 1px solid #999999;
+    background-color: #eeeeee;
+    margin: 20px auto;
+    zoom: 1;
+}
+aside, article{
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+.team-logo{
+    float: left;
+    height: 80px;
+    padding: 20px;
+}
+.team-logo h2{
+    float: right;
+    margin-left: 20px;
+}
+.member-logo{
+    float: right;
+    width: 100px;
+    padding: 10px;
+}
+.member-logo img{
+    margin: 10px;
+}
+#freshmanTeam:before,
+#freshmanTeam:after{
+    content: "";
+    display: table;
+}
+#freshmanTeam:after{
+    clear: both;
+}
+article{
+    margin-left: 281px;
+    margin-right: 160px;
+    text-align: center;
+    padding: 30px 0;
+    min-width: 200px;
+}
