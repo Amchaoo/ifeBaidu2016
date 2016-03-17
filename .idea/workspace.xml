@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eecbf82-59ac-4b0b-855e-143a21a114f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1.6/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1.6/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2eecbf82-59ac-4b0b-855e-143a21a114f9" name="Default" comment="" />
     <ignored path="ifeBaidu2016.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
