@@ -18,7 +18,6 @@
     clear: both;
 }
 body{
-    width: 1280px;
     margin: 0 auto;
 }
 a,h1,h2,h3,h4,h5,h6{
@@ -35,6 +34,7 @@ li{
     width: 100%;
     height: 56px;
     background-color: #ffffff;
+    border-bottom: 2px solid #aaaaa9;
 }
 #topHead .logo{
     font-family: 黑体, sans-serif;
@@ -82,7 +82,8 @@ li{
 /*头部的紧下方*/
 #experience{
     height: 942px;
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
 }
 #experience .top{
     color: white;
@@ -120,6 +121,7 @@ li{
     height: 252px;
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
 #experience .bottom li{
     float: left;
@@ -140,17 +142,15 @@ li{
     width: 158px;
     padding: 0 81px;
     height: 52px;
-    border-right: 1px solid #AAAAAB;
-}
-#experience .bottom h4:last-child{
-    border-right: 1px solid #ffffff;
+    border-right: 2px solid #AAAAAB;
 }
 
 
 /*新世界和搜索*/
 #search .new-world{
     height: 360px;
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
     background-color: #EDEDEC;
     text-align: center;
 }
@@ -264,6 +264,7 @@ li{
     height: 505px;
     background-color: #F7F7F7;
     width: 1024px;
+    margin: 0 auto;
     padding: 100px 128px 0 128px;
 }
 .cities li{
@@ -292,7 +293,8 @@ li{
 }
 .activity-will-show{
     height: 565px;
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
 }
 .activity-will-show .information{
     font-family: "Microsoft YaHei", sans-serif;
@@ -372,7 +374,8 @@ li{
 }
 #activity .extend{
     height: 522px;
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
 }
 #activity .extend li{
     height: 522px;
@@ -434,7 +437,8 @@ li{
 
 /*加入我们*/
 #joinUs{
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
 }
 #joinUs .top{
     width: 100%;
