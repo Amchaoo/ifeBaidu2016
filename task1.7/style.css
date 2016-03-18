@@ -568,6 +568,24 @@ li{
     font-size: 15px;
     color: white;
 }
+#contactUs a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 35px 10px;
+}
+#contactUs .qq{
+    background: url("image/qq.gif") no-repeat;
+}
+#contactUs .weibo{
+    background: url("image/weibo.gif") no-repeat;
+}
+#contactUs .twitter{
+    background: url("image/twwiter.gif") no-repeat;
+}
+#contactUs .earth{
+    background: url("image/earth.gif") no-repeat;
+}
 
 footer{
     width: 100%;
