@@ -120,6 +120,7 @@ li{
     height: 252px;
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
 #experience .bottom li{
     float: left;
@@ -140,10 +141,7 @@ li{
     width: 158px;
     padding: 0 81px;
     height: 52px;
-    border-right: 1px solid #AAAAAB;
-}
-#experience .bottom h4:last-child{
-    border-right: 1px solid #ffffff;
+    border-right: 2px solid #AAAAAB;
 }
 
 
