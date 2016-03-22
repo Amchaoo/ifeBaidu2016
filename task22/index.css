@@ -10,6 +10,7 @@
 div{
     border: 3px solid gold;
     display: flex;
+    background-color: white;
 }
 .tree1{
     width: 400px;
