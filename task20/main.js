@@ -114,7 +114,7 @@
         }else {
             var liList = container.getElementsByTagName("li");
             for(var i= 0, len=liList.length; i<len; i++){
-                if(inputSearchContent.indexOf(liList[i].innerText) > -1){
+                if(liList[i].innerText.indexOf(inputSearchContent) > -1){
                     liList[i].style.backgroundColor = "#aaaaaa";
                 }else {
                     liList[i].style.backgroundColor = "gold";
