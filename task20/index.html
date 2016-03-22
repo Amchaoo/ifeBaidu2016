@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>任务二十：基础JavaScript练习（三）</title>
+    <style>
+        #display ul{
+            overflow: hidden;
+        }
+        #display li{
+            float: left;
+            margin: 5px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 5px;
+            min-width: 50px;
+            text-align: center;
+            list-style-type: none;
+            background-color: gold;
+
+        }
+        textarea{
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-
+<div id="charge">
+    <textarea id="inputZone" placeholder="格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔"></textarea>
+    <input id="leftOut" type="button" value="左移出"/>
+    <input id="rightOut" type="button" value="右移出"/>
+    <input id="leftIn" type="button" value="左移入"/>
+    <input id="rightIn" type="button" value="右移入"/>
+    <input id="input-search" type="text" placeholder="查询"/>
+    <input id="search" type="button" value="查询"/>
+</div>
+<div id="display">
+    <ul>
+        <li>1</li>
+        <li>4</li>
+        <li>a</li>
+        <li>5</li>
+    </ul>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
