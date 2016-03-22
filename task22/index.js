@@ -38,34 +38,34 @@
         var len = queue.length;
         var i = 0;
 
-        queue[0].style.borderColor = "red";
+        queue[0].style.backgroundColor = "red";
         timer = setInterval(function(){
             if(i<len-1){
-                queue[i].style.borderColor = "gold";
-                queue[i+1].style.borderColor = "red";
+                queue[i].style.backgroundColor = "white";
+                queue[i+1].style.backgroundColor = "red";
                 current = queue[i+1];
                 i++;
             }else {
-                queue[i].style.borderColor = "gold";
+                queue[i].style.backgroundColor = "white";
                 clearInterval(timer);
             }
-        }, 500);
+        }, 800);
     }
 
     preBtn.onclick = function(){
-        current ? current.style.borderColor = "gold" : null;
+        current ? current.style.backgroundColor = "white" : null;
         queue = [];
         preOrder(root);
         move();
     };
     inBtn.onclick = function(){
-        current ? current.style.borderColor = "gold" : null;
+        current ? current.style.backgroundColor = "white" : null;
         queue = [];
         inOrder(root);
         move();
     };
     postBtn.onclick = function(){
-        current ? current.style.borderColor = "gold" : null;
+        current ? current.style.backgroundColor = "white" : null;
         queue = [];
         postOrder(root);
         move();
