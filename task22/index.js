@@ -40,7 +40,7 @@
 
         queue[0].style.borderColor = "red";
         timer = setInterval(function(){
-            if(i<len){
+            if(i<len-1){
                 queue[i].style.borderColor = "gold";
                 queue[i+1].style.borderColor = "red";
                 current = queue[i+1];
