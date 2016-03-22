@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19860627">
+            <state vertical-scroll-proportion="-3.5625">
               <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -35,19 +35,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.62046206">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
-                <element signature="e#461#734#0" expanded="false" />
-                <element signature="e#786#1189#0" expanded="false" />
-                <element signature="e#1239#1708#0" expanded="false" />
-                <element signature="e#1748#2318#0" expanded="false" />
-                <element signature="e#2370#3187#0" expanded="false" />
-                <element signature="e#3318#3373#0" expanded="false" />
-                <element signature="e#3421#3551#0" expanded="false" />
+                <element signature="e#762#1035#0" expanded="false" />
+                <element signature="e#1087#1490#0" expanded="false" />
+                <element signature="e#1540#2009#0" expanded="false" />
+                <element signature="e#2049#2619#0" expanded="false" />
+                <element signature="e#2671#3570#0" expanded="false" />
+                <element signature="e#3263#3458#0" expanded="false" />
+                <element signature="e#3701#3756#0" expanded="false" />
+                <element signature="e#3804#3934#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,7 +140,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -171,29 +172,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="7" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
-          <folding>
-            <element signature="e#461#734#0" expanded="false" />
-            <element signature="e#786#1189#0" expanded="false" />
-            <element signature="e#1239#1708#0" expanded="false" />
-            <element signature="e#1748#2318#0" expanded="false" />
-            <element signature="e#2370#3187#0" expanded="false" />
-            <element signature="e#3318#3373#0" expanded="false" />
-            <element signature="e#3421#3551#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19860627">
+        <state vertical-scroll-proportion="-3.5625">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62046206">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#762#1035#0" expanded="false" />
+            <element signature="e#1087#1490#0" expanded="false" />
+            <element signature="e#1540#2009#0" expanded="false" />
+            <element signature="e#2049#2619#0" expanded="false" />
+            <element signature="e#2671#3570#0" expanded="false" />
+            <element signature="e#3263#3458#0" expanded="false" />
+            <element signature="e#3701#3756#0" expanded="false" />
+            <element signature="e#3804#3934#0" expanded="false" />
           </folding>
         </state>
       </provider>
