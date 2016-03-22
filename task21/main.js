@@ -10,6 +10,17 @@
     var confirmInterest = document.getElementById("confirmInterest");
     var interestContainer = document.getElementById("interestContainer");
 
+    //判断标签中是否已经含有
+    function hasLabel(label, container){
+        var liList = container.getElementsByTagName("li");
+        for(var i= 0, len=liList.length; i<len; i++){
+            if(liList[i].innerHTML === label){
+                return true;
+            }
+        }
+        return false;
+    }
+
     //事件的兼容函数
     function addEvent(element, type, handler){
         if (element.addEventListener){
@@ -87,9 +98,11 @@
             var fragment = document.createDocumentFragment();
 
             for (var i= 0, len=value.length; i<len; i++){
-                var li = document.createElement("li");
-                li.innerHTML = value[i];
-                fragment.appendChild(li);
+                if(!hasLabel(value[i], container)){
+                    var li = document.createElement("li");
+                    li.innerHTML = value[i];
+                    fragment.appendChild(li);
+                }
             }
 
             container.appendChild(fragment);
