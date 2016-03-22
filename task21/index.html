@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十：基础JavaScript练习（三）</title>
+    <style>
+        li{
+            list-style-type: none;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: white;
+            background: gold;
+            min-width: 50px;
+            padding: 0 5px;
+            margin: 5px;
+            float: left;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        ul{
+            overflow: hidden;
+        }
+        textarea{
+            width: 200px;
+            height: 100px;
+            vertical-align: text-top;
+        }
+    </style>
+</head>
+<body>
+<div id="tag">
+    <label for="inputTag">Tag</label><input name="tag" type="text" id="inputTag" placeholder="输入标签"/>
+    <ul id="tagContainer">
+        <li>HTML5</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+    </ul>
+</div>
+<div id="interest">
+    <textarea name="interest" id="inputInterest" placeholder="可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为间隔"></textarea>
+    <br/><button id="confirmInterest">确定兴趣爱好</button>
+    <ul id="interestContainer">
+        <li>游泳</li>
+        <li>瑜伽</li>
+        <li>摄影</li>
+    </ul>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
