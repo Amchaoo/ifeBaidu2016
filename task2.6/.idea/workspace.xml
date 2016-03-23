@@ -25,7 +25,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.36062717">
+=======
+            <state vertical-scroll-proportion="0.48083624">
+>>>>>>> gh-pages
               <caret line="24" column="27" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="e#131#402#0" expanded="false" />
@@ -39,7 +43,11 @@
         <entry file="file://$PROJECT_DIR$/task.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+=======
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+>>>>>>> gh-pages
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
                 <element signature="e#515#709#0" expanded="false" />
@@ -168,7 +176,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+>>>>>>> gh-pages
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -201,7 +213,11 @@
     <entry file="file://$PROJECT_DIR$/task.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+=======
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+>>>>>>> gh-pages
           <folding>
             <element signature="e#0#38#0" expanded="false" />
             <element signature="e#515#709#0" expanded="false" />
@@ -211,7 +227,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.36062717">
+=======
+        <state vertical-scroll-proportion="0.48083624">
+>>>>>>> gh-pages
           <caret line="24" column="27" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="e#131#402#0" expanded="false" />
