@@ -18,9 +18,14 @@
             alert(ev.target.innerText);
             this.removeChild(ev.target);
         }
-    };
+    }
 
     leftPop.onclick = function(){
+<<<<<<< HEAD
+        var firstEle = figureContainer.firstElementChild;
+        alert(firstEle.innerText);
+        figureContainer.removeChild(firstEle);
+=======
         if(figureContainer.childElementCount !== 0){
             var firstEle = figureContainer.firstElementChild;
             alert(firstEle.innerText);
@@ -28,6 +33,7 @@
         }else {
             alert("没有可以出的数啦");
         }
+>>>>>>> gh-pages
     };
 
     leftPush.onclick = function(){
@@ -42,6 +48,11 @@
     };
 
     rightPop.onclick = function(){
+<<<<<<< HEAD
+        var lastEle = figureContainer.lastElementChild;
+        alert(lastEle.innerText);
+        figureContainer.removeChild(lastEle);
+=======
         if(figureContainer.childElementCount !==0){
             var lastEle = figureContainer.lastElementChild;
             alert(lastEle.innerText);
@@ -49,6 +60,7 @@
         }else {
             alert("没有可出的数啦");
         }
+>>>>>>> gh-pages
     };
 
     rightPush.onclick = function(){
