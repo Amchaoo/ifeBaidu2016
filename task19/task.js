@@ -2,7 +2,7 @@
  * Created by 安超 on 2016/3/23.
  */
 "use strict";
-(function(){
+(function() {
     var figureContainer = document.getElementById("display").firstElementChild;
     var inputBox = document.getElementsByClassName("input-box")[0];
     var leftPush = document.getElementById("leftPush");
@@ -12,80 +12,82 @@
     var random50 = document.getElementById("charge").getElementsByClassName("random-50")[0];
     var sort = document.getElementById("sort");
     var queue = [];
+    var time = 100;
+    var now;
 
     //检查输入
-    function checkInput(){
+    function checkInput() {
         var value = inputBox.value;
-        if(Number(value) >= 10 && Number(value) <= 100){
+        if (Number(value) >= 10 && Number(value) <= 100) {
             return Number(value);
-        }else {
+        } else {
             alert("输入有误");
             return false;
         }
     }
 
     //检查数量限制
-    function checkAmount(){
-        if(figureContainer.childElementCount === 60){
+    function checkAmount() {
+        if (figureContainer.childElementCount === 60) {
             alert("不能超过60个啊");
             return false;
-        }else {
+        } else {
             return true;
         }
     }
 
     //从左侧出
-    function leftOut(){
-        if(figureContainer.childElementCount !== 0){
+    function leftOut() {
+        if (figureContainer.childElementCount !== 0) {
             figureContainer.removeChild(figureContainer.firstElementChild);
             queue.shift();
-        }else {
+        } else {
             alert("队列已空");
         }
     }
 
     //从右侧出
-    function rightOut(){
-        if(figureContainer.childElementCount !==0){
+    function rightOut() {
+        if (figureContainer.childElementCount !== 0) {
             figureContainer.removeChild(figureContainer.lastElementChild);
             queue.pop()
-        }else {
+        } else {
             alert("队列已空");
         }
     }
 
     //从左侧入
-    function  leftIn(){
+    function leftIn() {
         var text = checkInput();
-        if(text && checkAmount()){
+        if (text && checkAmount()) {
             var li = document.createElement("li");
-            li.style.height = text*5 + "px";
+            li.style.height = text * 5 + "px";
             figureContainer.insertBefore(li, figureContainer.firstElementChild);
             queue.unshift(text);
         }
     }
 
     //从右侧入
-    function  rightIn(){
+    function rightIn() {
         var text = checkInput();
-        if(text && checkAmount()){
+        if (text && checkAmount()) {
             var li = document.createElement("li");
-            li.style.height = text*5 + "px";
+            li.style.height = text * 5 + "px";
             figureContainer.appendChild(li);
             queue.push(text);
         }
     }
 
     //随机生成50个li
-    function randomLiList(){
+    function randomLiList() {
         figureContainer.innerHTML = "";
         queue = [];
         var fragment = document.createDocumentFragment();
 
-        for (var i=0; i<50; i++){
-            var value = 10 + parseInt(90*Math.random());
+        for (var i = 0; i < 50; i++) {
+            var value = 10 + parseInt(90 * Math.random());
             var li = document.createElement("li");
-            li.style.height = value*5 + "px";
+            li.style.height = value * 5 + "px";
             fragment.appendChild(li);
             queue.push(value);
         }
@@ -97,42 +99,44 @@
     function quickSort(arr, left, right) {
         var list = figureContainer.getElementsByTagName("li");
 
-        if(right-left >= 1){
+        if (right - left >= 1) {
             var
                 i = left,
                 j = right,
                 k = arr[i],
                 temp;
-
-            while(i != j){
-                for (; j > i; j--) {
-                    if(arr[j] < k){
-                        temp = arr[j];
-                        arr[j] = arr[i];
-                        arr[i] = temp;
-                        list[i].style.height = arr[i]*5 + "px";
-                        list[j].style.height = arr[j]*5 + "px";
-                        break;
-                    }
-                }
-
-                for (; j > i; i++) {
-                    if(arr[i] > k){
-                        temp = arr[j];
-                        arr[j] = arr[i];
-                        arr[i] = temp;
-                        list[i].style.height = arr[i]*5 + "px";
-                        list[j].style.height = arr[j]*5 + "px";
-                        break;
-                    }
+            while (i != j) {
+                for (; j>i; j--){
+                if (arr[j] < k) {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                    list[i].style.height = arr[i] * 5 + "px";
+                    list[j].style.height = arr[j] * 5 + "px";
+                    break;
                 }
             }
 
-            setTimeout(function(){
-                arr = quickSort(arr,left,i-1);
-                arr = quickSort(arr,i+1,right);
-            }, 500);
+            for (; j > i; i++) {
+                if (arr[i] > k) {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+
+
+                    list[i].style.height = arr[i] * 5 + "px";
+                    list[j].style.height = arr[j] * 5 + "px";
+                    break;
+                }
+            }
         }
+
+        setTimeout(function(){
+            arr = quickSort(arr, left, i - 1);
+            arr = quickSort(arr, i + 1, right);
+        }, 200);
+    }
+
         return arr;
     }
 
@@ -149,4 +153,3 @@
     random50.addEventListener("click", randomLiList);
     sort.addEventListener("click", sortLi)
 })();
-
