@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务十九：基础JavaScript练习（二）</title>
+    <style>
+        li{
+            width: 10px;
+            vertical-align: bottom;
+            height: 20px;
+            background-color: gold;
+            list-style-type: none;
+            display: inline-block;
+            margin: 2px;
+        }
+        .container{
+            overflow: hidden;
+            height: 500px;
+            width: 100%;
+            line-height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div id="charge">
+    <input class="input-box" placeholder="请输入数字"/>
+    <input class="random-50" type="button" value="随机生成50">
+    <input id="leftPush" type="button" value="左侧入"/>
+    <input id="rightPush" type="button" value="右侧入"/>
+    <input id="leftPop" type="button" value="左侧出"/>
+    <input id="rightPop" type="button" value="右侧出"/>
+    <input id="sort" type="button" value="快排"/>
+</div>
+<div id="display">
+    <ul class="container">
+    </ul>
+</div>
+<script src="task.js"></script>
+</body>
+</html>
