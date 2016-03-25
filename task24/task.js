@@ -83,7 +83,7 @@
                 onAnimate = false;
                 clickSearch = false;
 
-                if(!found){
+                if(!found && clickSearch){
                     alert("没有找到啊！")
                 }
             }
