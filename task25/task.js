@@ -132,6 +132,15 @@
         if(addInputText === ""){
             alert("请输入值!");
         }else {
+            console.log(target.getElementsByTagName("div").length)
+            if(target.getElementsByTagName("div").length === 0){
+                var spanEle = document.createElement("span");
+                spanEle.className = "extend";
+                spanEle.innerHTML = "+";
+                target.appendChild(spanEle);
+            }
+
+            //添加节点内容
             var divEle = document.createElement("div");
             divEle.innerHTML = addInputText;
             target.appendChild(divEle);
@@ -141,16 +150,16 @@
     //展开与收缩
     function extendAndClose(node){
         var eleList = node.parentNode.children;
-        if(node.parentNode.lastElementChild.style.display === "none"){
+        if(node.parentNode.lastElementChild.style.display === "block"){
             for(var i= 0, len=eleList.length; i<len; i++){
                 if(!(eleList[i].className === "extend")){
-                    eleList[i].style.display = "block";
+                    eleList[i].style.display = "none";
                 }
             }
         }else {
             for(var i= 0, len=eleList.length; i<len; i++){
                 if(!(eleList[i].className === "extend")){
-                    eleList[i].style.display = "none";
+                    eleList[i].style.display = "block";
                 }
             }
     }
