@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十三：JavaScript和树（二）</title>
+    <style>
+        #root{
+            width: 60%;
+            float: left;
+        }
+        div{
+            border: 1px solid black;
+            padding-left: 20px;
+            margin: 10px;
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        .layer1{
+            display: none;
+        }
+        .layer2{
+            display: none;
+        }
+        .layer3{
+            display: none;
+        }
+        .layer4{
+            display: none;
+        }
+        #btn{
+            border: none;
+            float: right;
+            overflow: visible;
+        }
+        .extend{
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            display: block;
+            width: 20px;
+            text-align: center;
+            line-height: 12px;
+            background-color: aqua;
+        }
+        .extend:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="root">Supper<span class="extend">+</span>
+    <div class="layer1">Cat<span class="extend">+</span>
+        <div class="layer2">Apple<span class="extend">+</span>
+            <div class="layer3">Pear</div>
+            <div class="layer3">Pig</div>
+            <div class="layer3">Cola</div>
+            <div class="layer3">Soccer</div>
+        </div>
+        <div class="layer2">Phone</div>
+        <div class="layer2">Hello<span class="extend">+</span>
+            <div class="layer3">Book</div>
+            <div class="layer3">School</div>
+        </div>
+    </div>
+    <div class="layer1">Note<span class="extend">+</span>
+        <div class="layer2">Human<span class="extend">+</span>
+            <div class="layer3">Code</div>
+            <div class="layer3">Operate</div>
+            <div class="layer3">Man</div>
+        </div>
+        <div class="layer2">Program<span class="extend">+</span>
+            <div class="layer3">Bement<span class="extend">+</span>
+                <div class="layer4">Cat</div>
+            </div>
+            <div class="layer3">Glass</div>
+        </div>
+    </div>
+    <div class="layer1">Fish</div>
+</div>
+<div id="btn">
+    <input id="traversal" type="button" value="遍历"/>
+    <input id="searchInput" type="text" />
+    <input id="search" type="button" value="查询"/><br/>
+    <textarea id="addInput" placeholder="输入所要添加的节点"></textarea>
+    <input id="add" type="button" value="添加节点"/>
+    <input id="delete" type="button" value="删除节点"/>
+</div>
+<script src="task.js"></script>
+</body>
+</html>
