@@ -1,0 +1,27 @@
+input{
+    width: 250px;
+    height: 30px;
+    margin-left: 10px;
+}
+#btn{
+    width: 50px;
+    color: white;
+    height: 30px;
+    border: none;
+    background-color: #4c53ff;
+}
+.tip{
+    font-size: 14px;
+}
+p{
+    margin-left: 38px;
+}
+.right{
+    color: green;
+    font-size: 14px;
+}
+.error{
+    color: red;
+    border-color: red;
+    font-size: 14px;
+}
