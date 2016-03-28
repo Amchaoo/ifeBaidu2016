@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十：表单（二）多个表单项的动态校验</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<form method="post">
+    <p class="h50"><label for="username">名称</label><input class="1 2" name="username" id="username" type="text"/><span class="tip username-tip">必填，长度为4-16个字符</span></p>
+    <p class="h50"><label for="psd">密码</label><input name="psd" id="psd" type="password"/><span class="tip psd-tip">密码为6-16位字符，支持数字,字母大小写,不能有空格</span></p>
+    <p class="h50"><label for="ensurePsd">密码确认</label><input name="ensurePsd" id="ensurePsd" type="password"/><span class="tip ensure-tip">再次输入相同的密码</span></p>
+    <p class="h50"><label for="email">邮箱</label><input name="email" id="email" type="email"/><span class="tip email-tip">输入你的常用邮箱</span></p>
+    <p class="h50"><label for="phone">手机号</label><input name="phone" id="phone" type="text"/><span class="tip email-tip">请输入手机号</span></p>
+    <input id="button" type="button" value="提交">
+</form>
+<script src="task.js"></script>
+</body>
+</html>
