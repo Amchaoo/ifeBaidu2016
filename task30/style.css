@@ -1,0 +1,41 @@
+body{
+    width: 40%;
+    margin: 50px auto;
+}
+label{
+    display: inline-block;
+    font-size: 16px;
+    font-family: 黑体, sans-serif;
+    width: 100px;
+    padding-right: 10px;
+    text-align: right;
+}
+.tip{
+    display: block;
+    font-size: 13px;
+    font-family: 黑体, sans-serif;
+    margin-left: 110px;
+    margin-top: 4px;
+    color: transparent;
+}
+#button{
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: #5754ff;
+    border: none;
+    margin-left: 150px;
+}
+.h50{
+    height: 50px;
+}
+input{
+    height: 30px;
+    width: 220px;
+}
+.right{
+    color: green;
+}
+.error{
+    color: red;
+}
