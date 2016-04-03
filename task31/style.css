@@ -1,0 +1,78 @@
+*{
+    font-family: 黑体, sans-serif;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear-fix:after,
+.clear-fix:before{
+    content: "";
+    display: table;
+}
+.clear-fix:before{
+    clear: both;
+}
+#main{
+    width: 40%;
+    margin: 30px auto;
+}
+.container{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    border: 1px solid #999999;
+    vertical-align: text-top;
+}
+.container:hover{
+    background-color: #239AF4;
+    border: 1px solid #239AF4;
+}
+.active{
+    background-color: #239AF4;
+    border: 1px solid #239AF4;
+}
+#student p,
+#notStudent p{
+    display: inline-block;
+    line-height: 18px;
+}
+#student{
+    width: 50%;
+    margin-left: 40px;
+}
+.checked{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 4px;
+    background-color: white;
+}
+.school, .company{
+    margin-top: 70px;
+}
+.school label,.company label{
+    display: inline-block;
+    padding-right: 20px;
+    text-align: right;
+}
+#school{
+    margin-right: 20px;
+    height: 30px;
+    width: 30%;
+}
+#unis{
+    width: 40%;
+    height: 30px;
+}
+#company{
+    width: 70%;
+    height: 30px;
+}
+.company{
+    display: none;
+}
