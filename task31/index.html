@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十一：表单（三）联动</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div id="main" class="clear-fix">
+    <div id="student" class="fl">
+        <span class="container active">
+            <span class="checked"></span>
+        </span>
+        <p>在校生</p>
+    </div>
+    <div id="notStudent" class="fl">
+        <span class="container">
+            <span class="checked"></span>
+        </span>
+        <p>非在校生</p>
+    </div>
+    <div class="school clear-fix">
+        <label for="school">学校</label>
+        <select id="school"></select>
+        <select title="unis" id="unis"></select>
+    </div>
+    <div class="company">
+        <label for="company">就业单位</label>
+        <input id="company" type="text" name="company"/>
+    </div>
+</div>
+<script src="task.js"></script>
+</body>
+</html>
