@@ -2,6 +2,11 @@
  * Created by 安超 on 2016/4/12.
  */
 (function(){
+    //取属性值
+    var getCss = function(o,key){
+        return o.currentStyle? o.currentStyle[key] : document.defaultView.getComputedStyle(o,false)[key];
+    };
+
     function Pop(parent, config){
         this.title =  config.title || "提示";
         this.content = config.content || "暂时无内容";
@@ -73,6 +78,28 @@
         document.body.removeChild(this.mask);
     };
 
+    //拖拽
+    Pop.prototype.drag = function(event){
+        var ev = event || window.event;
+        var _this = this;
+        var ele = this.ele;
+
+        var relativeX = ev.clientX - parseInt(getCss(ele, "left"));
+        var relativeY = ev.clientY - parseInt(getCss(ele, "top"));
+
+        document.onmousemove = function(event){
+            var ev = event || window.event;
+
+            ele.style.left = ev.clientX - relativeX + "px";
+            ele.style.top = ev.clientY - relativeY + "px";
+        };
+
+        document.onmouseup = function(){
+            document.onmousemove = null;
+            document.onmouseup = null;
+        }
+    };
+
     //事件
     Pop.prototype.event = function(){
         var _this = this;
@@ -81,7 +108,7 @@
             var okayBtn = document.getElementById("acOkay");
 
             okayBtn.onclick = function(){
-                var event = this.okayEvent;
+                var event = _this.okayEvent;
                 event instanceof Function ? event() : _this.hide();
             };
         }
@@ -90,10 +117,14 @@
             var cancelBtn = document.getElementById("acCancel");
 
             cancelBtn.onclick = function(){
-                var event = this.cancelEvent;
+                var event = _this.cancelEvent;
                 event instanceof Function ? event() : _this.hide();
             };
         }
+
+        this.ele.onmousedown = function(){
+            _this.drag(event);
+        };
     };
 
 
